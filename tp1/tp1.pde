@@ -1,0 +1,239 @@
+//MaldonadoAzul 125620/4 c3 tp1
+PImage  miImagen;
+void setup(){
+  size(800,400);
+  miImagen=loadImage("data/mural.png");
+  background(#E8C4F0);
+}
+void draw(){
+  background(200);
+  image(miImagen, 0, 0, 400, 400);
+  
+  //arbol
+  fill(#487158);
+  ellipse(430,148,32,18);
+  fill(#6A4432);
+  quad(424,131,427,147,434,148,435,132);
+  //marcianito(?
+  fill(#FBFAFC);
+  beginShape();
+  vertex(463,48);
+  vertex(461,41);
+  vertex(465,40);
+  vertex(467,42);
+  vertex(472,38);
+  vertex(472,49);
+  endShape(CLOSE);
+  fill(#487158);
+  quad(454,64,464,77,467,53,461,50);
+  ellipse(465,53,19,13);
+  fill(#FBFAFC);
+  triangle(472,56,458,55,459,50);
+  line(464,39,467,43);
+  line(467,43,472,37);
+  //planeta(?
+  fill(#FBFAFC);
+  ellipse(439,96,75,80);
+  //estrellita
+  fill(#FCDF69);
+  beginShape();
+ vertex(540,5);
+ vertex(596,6);
+ vertex(553,36);
+ vertex(563,1);
+ vertex(576,1);
+ vertex(589,37);
+ endShape(CLOSE);
+ //ala de atras
+ fill(#949295);
+ triangle(487,304,476,310,464,275);
+ fill(#FBFAFC);
+ quad(464,274,484,312,462,310,444,261);
+ //los cosos de abajo
+ fill(#444246);
+ quad(471,343,486,334,476,324,460,331);
+ quad(451,354,474,343,461,331,452,340);
+ //nave
+ fill(#FBFAFC);
+ beginShape();
+ vertex(409,265);
+ vertex(405,241);
+ vertex(410,229);
+ vertex(417,227);
+ vertex(421,230);
+ vertex(427,229);
+ vertex(435,233);
+ vertex(484,324);
+ vertex(445,348);
+ endShape(CLOSE);
+ //vidrio de la nave
+ fill(#444246);
+ quad(419,230,425,229,426,268,419,258);
+ //la raya esa
+ quad(463,285,471,302,438,327,430,307);
+ //el ala chiquita
+ fill(#FBFAFC);
+ quad(452,286,486,311,496,327,469,325);
+ //ala grande
+ quad(429,282,426,323,432,356,456,341);
+ fill(#949295);
+ beginShape();
+ vertex(429,282);
+ vertex(427,277);
+ vertex(424,280);
+ vertex(423,323);
+ vertex(427,360);
+ vertex(432,356);
+ vertex(426,323);
+ endShape(CLOSE);
+ //el cable
+ fill(#444246);
+ beginShape();
+ vertex(525,265);
+ vertex(519,288);
+ vertex(511,334);
+ vertex(501,326);
+ vertex(490,312);
+ vertex(494,294);
+ vertex(495,311);
+ vertex(503,319);
+ vertex(506,322);
+ vertex(512,270);
+ vertex(519,257);
+ endShape(CLOSE);
+ line(494,294,486,289);
+ line(486,289,469,282);
+ line(469,282,482,342);
+ line(482,342,462,347);
+ line(462,347,457,314);
+ line(457,314,454,345);
+ line(454,345,438,319);
+ line(438,319,439,286);
+ line(439,286,424,282);
+  //mochila(?
+  fill(#FBFAFC);
+triangle(524,292,542,272,542,291);
+quad(528,219,514,227,524,292,538,282);
+//deditos
+fill(#444246);
+quad(601,84,591,72,600,62,618,81);
+quad(611,70,603,41,610,36,619,64);
+quad(619,64,620,32,643,45,644,73);
+//manito
+fill(#FBFAFC);
+beginShape();
+vertex(612,96);
+vertex(605,91);
+vertex(600,82);
+vertex(607,82);
+vertex(611,73);
+vertex(610,62);
+vertex(633,58);
+vertex(644,63);
+vertex(644,100);
+endShape(CLOSE);
+//Brasito
+beginShape();
+fill(#444246);
+vertex(605,230);
+vertex(622,211);
+vertex(637,186);
+vertex(648,131);
+vertex(645,95);
+vertex(611,96);
+vertex(611,123);
+vertex(598,194);
+endShape(CLOSE);
+//torso
+fill(#FBFAFC);
+quad(517,212,540,305,604,272,605,215);
+triangle(560,240,564,253,578,241);
+quad(549,235,551,233,558,273,554,277);
+line(551,233,604,230);
+//el coso del cuello(?
+fill(#949295);
+  quad(532,204,536,219,601,218,603,202); 
+ //casco
+  fill(#FBFAFC);
+  ellipse(400 + 174,153, 115, 123);
+fill(#444246);
+  ellipse(400 + 177, 145, 107, 107);
+  //pierna baja
+  fill(#444246);
+  beginShape();
+  vertex(604,266);
+  vertex(635,296);
+  vertex(660,354);
+  vertex(630,376);
+  vertex(599,315);
+  vertex(577,308);
+  endShape(CLOSE);
+  //patita
+  fill(#FBFAFC);
+  beginShape();
+  vertex(627,374);
+  vertex(661,351);
+  vertex(672,376);
+  vertex(694,383);
+  vertex(692,399);
+  vertex(635,399);
+  endShape(CLOSE);
+  //pierna levantada
+   fill(#444246);
+  beginShape();
+  vertex(540,307);
+  vertex(547,284);
+  vertex(583,226);
+  vertex(632,220);
+  vertex(637,267);
+  vertex(601,270);
+  vertex(577,313);
+  vertex(556,319);
+  endShape(CLOSE);
+  fill(#949295);
+  quad(665,199,659,198,664,267,673,263);
+  //patita
+  fill(#FBFAFC);
+  beginShape();
+  vertex(631,217);
+  vertex(642,216);
+  vertex(654,198);
+  vertex(665,199);
+  vertex(659,198);
+  vertex(665,252);
+  vertex(668,267);
+  vertex(636,269);
+  endShape(CLOSE);
+  //dedos
+  fill(#444246);
+  quad(500,83,499,57,507,49,513,74);
+  quad(512,67,524,31,530,40,522,69);
+  quad(526,70,534,38,544,44,547,77);
+  //mano
+  fill(#FBFAFC);
+  beginShape();
+  vertex(506,112);
+  vertex(504,97);
+  vertex(498,73);
+  vertex(509,75);
+  vertex(513,59);
+  vertex(548,75);
+  vertex(538,114);
+  endShape(CLOSE);
+  //braso
+  fill(#444246);
+  beginShape();
+  vertex(528,249);
+  vertex(536,249);
+  vertex(546,227);
+  vertex(546,216);
+  vertex(534,183);
+  vertex(531,149);
+  vertex(538,115);
+  vertex(518,98);
+  vertex(507,110);
+  vertex(498,144);
+  vertex(499,179);
+  vertex(510,216);
+  endShape(CLOSE); 
+}
